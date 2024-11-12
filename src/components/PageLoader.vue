@@ -34,7 +34,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #2b2b2b;
+        background-color: #131313;
         z-index: 999;
         gap: 1em;
         transition: 0.5s;
