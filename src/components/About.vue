@@ -1,15 +1,15 @@
 <script setup>
-import pablo from '../assets/pablo.jpg'
+import ramon from '../assets/image-removebg-preview_ramon.png'
 </script>
 
 <template>
-    <div class="lg:h-screen w-full bg-[#131313] text-white">
+    <div class="lg:h-screen w-full bg-gradient-to-b from-[#131313] to-[#131313]  text-white">
         <div class="lg:shape w-[40rem] h-[20rem] absolute mt-60 -rotate-45 right-40"></div>
-        <div class="flex flex-col w-full items-center h-full">
-            <div class="lg:w-[57rem] flex flex-col items-center lg:items-start">
-                <v-avatar :image="pablo" size="220"></v-avatar>
+        <div class="flex flex-col w-full items-center justify-center h-full">
+            <div class="lg:w-[57rem] flex flex-col items-center ml-2 lg:items-start">
+                <v-avatar :image="ramon" size="220" color="orange"></v-avatar>
                 <div class="flex flex-col">
-                    <h1 class="text-3xl lg:text-6xl">Buenas, soy <span class="bg-gradient-to-r from-orange-300 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text">Ramon Insua</span></h1>
+                    <h1 class="text-3xl lg:text-6xl">Buenas, soy <span class="bg-gradient-to-r from-orange-300 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text">Ramon Insua</span>👋🏻</h1>
                     <p class="mt-4 opacity-90 text-xl lg:text-lg">Un albañil profesional con más de 25 años de experiencia en la construcción y remodelación de todo tipo de proyectos. Mi pasión es transformar ideas en realidad, desde pequeños trabajos de reparación hasta grandes proyectos de construcción.</p>
                 </div>
                 <div class="flex flex-col lg:flex-row mt-7 gap-y-5">
