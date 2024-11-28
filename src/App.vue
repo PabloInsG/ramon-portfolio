@@ -8,7 +8,7 @@ import Carrousel from './components/Carrousel.vue';
 import logoLab from './assets/logo_def.png'
 </script>
 <template>
-  <div class="flex flex-col w-full">
+  <div class="flex flex-col w-full bg-orange-400">
     <PageLoader/> 
     <div class="w-full h-screen bg-gray-500 text-white text-9xl justify-center items-center flex">
         <v-parallax class="h-screen w-full bg-gradient-to-b from-orange-400 to-[#131313]">
