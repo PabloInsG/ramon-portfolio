@@ -3,14 +3,23 @@ import ramon from '../assets/image-removebg-preview_ramon.png'
 </script>
 
 <template>
-    <div class="lg:h-screen w-full bg-gradient-to-b from-[#131313] to-[#131313]  text-white">
-        <div class="lg:shape w-[40rem] h-[20rem] absolute mt-60 -rotate-45 right-40"></div>
+    <div id="inicio" class="absolute inset-x-0 -z-10 bottom-1/2 top-0 text-slate-600[mask-image:linear-gradient(white,transparent)]">
+        <svg aria-hidden="true" class="absolute inset-0 h-full w-full">
+            <defs>
+                <pattern id=":Rbm:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
+                    <path d="M0 128V.5H128" fill="none" stroke="#fbd38d"></path>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#:Rbm:)"></rect>
+        </svg>
+    </div>
+    <div class="lg:h-screen w-full bg-gradient-to-b  text-white">
         <div class="flex flex-col w-full items-center justify-center h-full">
-            <div class="lg:w-[57rem] flex flex-col items-center ml-2 lg:items-start">
+            <div class="lg:w-[57rem] flex flex-col items-center lg:items-start ">
                 <v-avatar :image="ramon" size="220" color="orange"></v-avatar>
-                <div class="flex flex-col">
-                    <h1 class="text-3xl lg:text-6xl">Buenas, soy <span class="bg-gradient-to-r from-orange-300 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text">Ramon Insua</span>👋🏻</h1>
-                    <p class="mt-4 opacity-90 text-xl lg:text-lg px-1">Un albañil profesional con más de 25 años de experiencia en la construcción y remodelación de todo tipo de proyectos. Mi pasión es transformar ideas en realidad, desde pequeños trabajos de reparación hasta grandes proyectos de construcción.</p>
+                <div class="flex flex-col bg-[#131313]">
+                    <h1 class="text-3xl lg:text-6xl">Buenas, soy <span class="bg-gradient-to-r from-orange-300 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text">Ramón Insua</span><span class="hidden lg:inline">👋🏻</span></h1>
+                    <p class="mt-4 text-xl lg:text-lg px-1">Un albañil profesional con más de 25 años de experiencia en la construcción y remodelación de todo tipo de proyectos. Mi pasión es transformar ideas en realidad, desde pequeños trabajos de reparación hasta grandes proyectos de construcción.</p>
                 </div>
                 <div class="flex flex-col lg:flex-row mt-7 gap-y-5">
                     <div class="flex flex-col lg:w-1/2 lg:bg-orange-400 rounded-lg lg:py-2 lg:px-2 px-1">

@@ -7,7 +7,7 @@ import img5 from '../assets/foto5.jpg'
 </script>
 
 <template>
-  <div class="lg:h-screen flex flex-col items-center border-none bg-[#131313]">
+  <div id="proyectos" class="lg:h-screen flex flex-col items-center border-none bg-[#131313]">
     <v-carousel class="!h-full !w-11/12 border-none mt-3" hide-delimiters cycle :show-arrows="false">
         <v-carousel-item :src="img1" cover></v-carousel-item>
         <v-carousel-item :src="img2" cover></v-carousel-item>

@@ -42,3 +42,9 @@ body {
     transform:translateY(14px)
 }
 }
+
+
+.cssNav {
+    left: 0;
+    transform: translate(calc(50vw - 50%));
+}

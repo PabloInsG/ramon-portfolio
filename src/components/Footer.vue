@@ -1,6 +1,39 @@
 <template>
-    <footer class="w-full flex flex-row relative bg-orange-400 bottom-0 justify-center gap-x-2 text-white mt-6">
-        <h1 class="text-lg">2024 ©</h1>
-        <a href="https://pabloinsg.github.io/" class="underline text-lg">Pablo Insua</a>
-    </footer>
+  <div class="w-full h-auto bg-[#131313]">
+    <v-footer class="flex flex-column bg-transparent text-white">
+      <div class="flex px-4">
+        <a href="#inicio">
+          <strong class="text-xl">Ramon Insua</strong>
+        </a>
+        <ul>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div>
+  
+      <div class="px-4 py-2 text-center w-100">
+        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+      </div>
+    </v-footer>
+  </div>
 </template>
+
+    <script>
+  export default {
+    data: () => ({
+      icons: [
+        'mdi-facebook',
+        'mdi-twitter',
+        'mdi-linkedin',
+        'mdi-instagram',
+      ],
+    }),
+  }
+</script>
