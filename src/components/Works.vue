@@ -17,64 +17,46 @@
     import img16 from '../assets/foto16.jpg'
     import img17 from '../assets/foto17.jpg'
     import img18 from '../assets/foto18.jpg'
+
+    const images = [
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6,
+        img7,
+        img8,
+        img9,
+        img10,
+        img11,
+        img12,
+        img13,
+        img14,
+        img15,
+        img16,
+        img17,
+        img18,
+    ]
 </script>
 
 <template>
     <div class="w-full bg-[#131313] flex justify-center">
-        <div className="grid grid-cols-2h-[200px] lg:grid-cols-3 grid-rows-5 gap-4 w-11/12 mt-5">
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img1" class="w-full h-full" alt="">
+        <div className="grid lg:grid-cols-3 grid-rows-5 gap-4 w-11/12 lg:w-3/4 mt-5">
+            <div class="h-[200px] lg:h-[325px]">
+                <img :src="img1" class="w-full h-full cover" alt="First image">
             </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img2" class="w-full h-full" alt="">
+            <div class="h-[200px] lg:h-[325px]">
+                <img :src="img2" class="w-full h-full" alt="Second image">
             </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img3" class="w-full h-full " alt="">
+            <div class="h-[200px] lg:h-[325px]">
+                <img :src="img3" class="w-full h-full " alt="Third image">
             </div>
             <div class="lg:col-span-2 lg:row-span-2">
-                <img :src="img4" class="w-full h-full" alt="">
+                <img :src="img4" class="w-full h-full" alt="Fourth image">
             </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img5" class="w-full h-full" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img6" class="w-full h-full " alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img7" class="w-full h-full " alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img8" class="w-full h-full " alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img9" class="w-full h-full cover" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img10" class="w-full h-full cover" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img11" class="w-full h-full cover" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img12" class="w-full h-full cover" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img13" class="w-full h-full" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img14" class="w-full h-full" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img15" class="w-full h-full" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img16" class="w-full h-full" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img17" class="w-full h-full" alt="">
-            </div>
-            <div class="h-[200px] lg:h-[400px]">
-                <img :src="img18" class="w-full h-full" alt="">
+            <div v-for="image in images" class="h-[200px] lg:h-[325px]">
+                <img :src="image" class="w-full h-full " alt="Third image"> 
             </div>
         </div>
     </div>
@@ -82,6 +64,6 @@
 
 <style>
 .cover {
-    object-fit: fill;
+    object-fit:cover;
 }
 </style>

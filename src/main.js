@@ -5,6 +5,7 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import VueSmoothScroll from 'vue3-smooth-scroll'
 
 const vuetify = createVuetify({
     components,
@@ -12,4 +13,4 @@ const vuetify = createVuetify({
 })
 
 
-createApp(App).use(vuetify).mount('#app')
+createApp(App).use(vuetify).use(VueSmoothScroll).mount('#app')
