@@ -1,5 +1,5 @@
 <script setup>
-import ramon from '../assets/image-removebg-preview_ramon.png'
+import ramon from '../assets/image-removebg-preview_ramon.webp'
 </script>
 
 <template>
