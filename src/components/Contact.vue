@@ -41,7 +41,7 @@ import Footer from './Footer.vue';
                     <div class="flex flex-col lg:flex-row">
                         <div class="flex flex-col">
                             <h1 class="text-xl gap-y-0  lg:text-2xl underline">Zonas de trabajo<span class="no-underline">🔨</span></h1>
-                                <p class="text-lg lg:text-xl">Me ubico en la zona de Zas, A Coruña, Galicia, estoy abierto a cualquier proyecto ubicado en la zona de Galicia.</p>
+                                <p class="text-lg lg:text-xl">Me ubico en la zona de Zas, A Coruña, Galicia, estoy abierto a cualquier proyecto ubicado en la zona de Costa da Morte, Bergantiños, A Coruña, Santiago de Compostela.</p>
                         </div>
                     </div>
                     <div class="w-full flex mt-4">
